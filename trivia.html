@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS and vendors -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--js vendors -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- my css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/trivia.css">
+
+  <!-- js -->
+  <script src="assets/js/trivia.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Cosmonaut</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="media.html">Media</a>
+          <a class="nav-item nav-link" href="trivia.html">Trivia</a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="faq.html">FAQ</a>
+          <a class="nav-item nav-link" href="contacts.html">Contact</a>
+          <a class="nav-item nav-link disabled" href="#"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="bg-dark">
+    <div class="container bg-dark" style="height: 500px;">
+      <div class="text-center clearfix">
+        <h1 class="text-light">Space Trivia Game</h1>
+      </div>
+      <div class="jumbotron jumbotron-fluid my-5">
+        <div class="container text-center">
+          <div id="game">
+            <h2>Space Trivia Game</h2>
+            <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+            <p id="question" class="lead"></p>
+          </div>
+          <div id="results">
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div id="choices" class="text-center">
+            <button id="start" class="btn btn-dark btn-lg">Start Game</button>
+            <div id="options">
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <footer id="footer">
+
+    <div class="m-5">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="text-center col-lg-6 col-md-12">
+            <h4>Useful Links</h4>
+            <a class="btn p-1" href="index.html">Home</a>
+            <a class="btn p-1" href="media.html">Media</a>
+            <a class="btn p-1" href="trivia.html">Trivia</a>
+            <a class="btn p-1" href="about.html">About</a>
+            <a class="btn p-1" href="faq.html">FAQ</a>
+            <a class="btn p-1" href="contacts.html">Contact</a>
+          </div>
+
+          <div class="text-center col-lg-6 col-md-12">
+            <h4>Social Networks</h4>
+            <p>To learn more about space programs follow those social networks</p>
+            <div>
+              <a href="https://www.facebook.com/NASA/" class="fa fa-facebook" target="_blank"></a>
+              <a href="https://twitter.com/NASA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="fa fa-twitter" target="_blank"></a>
+              <a href="https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ" class="fa fa-youtube"
+                target="_blank"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-center text-light">
+      <div class="text-center p-3">
+        © 2021 Copyright All Rights Reserved:
+        <a href="index.html">COSMONAUT</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
