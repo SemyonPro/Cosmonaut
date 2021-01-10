@@ -1,241 +1,396 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">  
-  
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap CSS and vendors -->
+    <!-- Bootstrap CSS and vendors -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- vendors -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- vendors -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- My js -->
+    <script src="assets/js/app.js"></script>
 
-  <!-- My js -->
-  <script src="assets/js/app.js"></script>
+    <!-- My css -->
+    <link rel="stylesheet" href="assets/css/faq.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- My css -->
-  <link rel="stylesheet" href="assets/css/faq.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <title>Media gallery</title>
+  </head>
 
-  <title>Media gallery</title>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Cosmonaut</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="media.html">Media</a>
+            <a class="nav-item nav-link" href="trivia.html">Trivia</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="faq.html">FAQ</a>
+            <a class="nav-item nav-link" href="contacts.html">Contact</a>
+            <a class="nav-item nav-link disabled" href="#"></a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-</head>
-
-<body>
-
-  <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Cosmonaut</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="media.html">Media</a>
-          <a class="nav-item nav-link" href="trivia.html">Trivia</a>
-          <a class="nav-item nav-link" href="about.html">About</a>
-          <a class="nav-item nav-link" href="faq.html">FAQ</a>
-          <a class="nav-item nav-link" href="contacts.html">Contact</a>
-          <a class="nav-item nav-link disabled" href="#"></a>
+    <section id="content">
+      <div class="col-sm-6 container">
+        <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2>
+        <br />
+        <br />
+        <div class="container-toggle" id="accordion1">
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc1"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="false"
+                >What keeps space empty?</a
+              >
+            </h4>
+            <div class="collapse" id="acc1" aria-expanded="false">
+              <div class="panel-content">
+                <p>
+                  Space is not empty. A point in outer space is filled with gas,
+                  dust, a wind of charged particles from the stars, light from
+                  stars, cosmic rays, radiation left over from the Big Bang,
+                  gravity, electric and magnetic fields, and neutrinos from
+                  nuclear reactions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc2"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="false"
+                >What keeps the sun spinning?</a
+              >
+            </h4>
+            <div class="collapse" id="acc2" aria-expanded="false">
+              <div class="panel-content">
+                <p>
+                  Nothing keeps the sun spinning. The sun spins under its own
+                  inertia and does not need any help to keep it going. Isaac
+                  Newton observed that objects in motion tend to stay in motion.
+                  This is called the Law of Inertia. It means that if an object
+                  is already moving and nothing acts on it to stop it, the
+                  object will just keep moving under its own inertia. For
+                  instance, a hockey puck sliding across the parking lot will
+                  only stop if it hits a wall or if there is enough friction
+                  acting on it to slow it down to a stop. Without an external
+                  force like friction or a wall getting in the way, the puck
+                  will slide forever under its own inertia. The Law of Inertia
+                  is just a conceptual statement. The more general and more
+                  mathematical version of the Law of Inertia is called the Law
+                  of Conservation of Momentum. It states that the total momentum
+                  of an object stays constant if nothing acts on the object.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc3"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="false"
+                >What makes space so cold?</a
+              >
+            </h4>
+            <div class="collapse" id="acc3" aria-expanded="false">
+              <div class="panel-content">
+                <p>
+                  Space is not always cold. It depends if you are facing the sun
+                  or not. And even if you are in shadow, space is not cold in
+                  the sense that it will cool you down quickly. The part of an
+                  astronaut facing the sun becomes blazing hot while the side in
+                  shadow remains a moderate temperature due to the suits
+                  internal machinery. Think of how you feel standing close to a
+                  campfire on a cold night, and you get some of idea of the
+                  temperatures effects in space. The dark parts of the moon
+                  reach -410° F while the sunlit parts reach 240° F, as measured
+                  by the Lunar Reconnaissance Orbiter. We don't experience these
+                  cold and hot extremes on earth because the atmosphere mixes
+                  around and evens out the temperatures. Planets without
+                  atmospheres, however, experience these extreme variations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc4"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="false"
+                >What makes the Great Wall of China the only man-made object
+                visible from space?
+              </a>
+            </h4>
+            <div class="collapse" id="acc4" aria-expanded="true">
+              <div class="panel-content">
+                <p>
+                  The Great Wall of China is not visible to the naked eye from
+                  space, even in low-earth orbit, according to NASA. Even though
+                  the wall is very long, it is also very thin, making it
+                  essentially invisible. In fact, no man-made objects are
+                  visible from space by the naked eye, according to astronauts.
+                  The earth is a very big place and human-sized objects are
+                  miniscule by comparison. With the help of zoom lenses, cameras
+                  in space can see much finer detail than human eyes. However,
+                  due to its thinness, the Great Wall of China is not the
+                  easiest man-made object for a camera in space to spot. If you
+                  slowly zoom in using a space camera, the Houston airport, for
+                  instance, is visible long before the Great Wall of China.
+                  Major highways radiating out like spokes from large cities are
+                  typically the most visible structures from space for a camera.
+                  This is because valleys are typically blasted through the
+                  hills to make way for the straight highways.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc5"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="false"
+                >Why are all the stars fixed in space?</a
+              >
+            </h4>
+            <div class="collapse" id="acc5" aria-expanded="true">
+              <div class="panel-content">
+                <p>
+                  The stars are not fixed, but are constantly moving. If you
+                  factor out the daily arcing motion of the stars across the sky
+                  due to the earth's rotation, you end up with a pattern of
+                  stars that seems to never change. The stars seem so fixed that
+                  ancient sky-gazers mentally connected the stars into figures
+                  (constellations) that we can still make out today. But in
+                  reality, the stars are constantly moving. They are just so far
+                  away that the naked eye cannot detect their movement. But
+                  sensitive instruments can detect their movement. Consider
+                  driving down the highway in the mountains at 60 mph. The
+                  telephone poles on the side of the road seem to whiz past you,
+                  but the distant mountains seem to hardly move at all. In fact,
+                  they are both traveling at the same speed (60 mph) relative to
+                  you. The mountains just seem to move slower than the telephone
+                  poles because of a perspective effect known as parallax. In
+                  general, the more distant an object, the less it moves in your
+                  field of view for a certain, fixed actual speed. The stars
+                  (even the closest ones) are vastly farther away than the
+                  mountains, so their motion in our field of view is miniscule.
+                  But they are still moving.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc6"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="true"
+                >Why does the moon get bigger when it's closer to the
+                horizon?</a
+              >
+            </h4>
+            <div class="collapse" id="acc6" aria-expanded="true">
+              <div class="panel-content">
+                <p>
+                  The moon stays approximately the same size, whether measured
+                  by apparent size or actual size. Actual size is the number you
+                  would measure if you went to the moon with a long ruler. It
+                  would take a cataclysmic event such as collision with a planet
+                  to change the actual size of the moon. Apparent size is the
+                  angular diameter that an object takes up in a camera's field
+                  of view and depends on both actual size and distance. The
+                  apparent size would change if the moon moved significantly
+                  away from the earth. But it doesn't. According to "The Moon
+                  Book" by Kim Long, the distance of the moon from the earth
+                  only changes by about 10%. This means that the observed
+                  diameter of the moon only changes by 10% throughout the month.
+                  This small variation of the moon's apparent size is easily
+                  verified with a camera. We only think the moon looks bigger on
+                  the horizon because of a psychological trick. When the moon is
+                  low, we can visually compare it to distant mountains and
+                  conclude that the moon is much bigger than a mountain. But
+                  when the moon is high, there is nothing to compare it to, so
+                  our minds perceive it to be smaller. The exact mechanism is
+                  still debated by psychologists, as set forth in the book "The
+                  Moon Illusion" by Maurice Hershenson.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel style1">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                href="#acc7"
+                data-toggle="collapse"
+                data-parent="#accordion1"
+                data-abc="true"
+                aria-expanded="false"
+                >Why is there no up and down in space?</a
+              >
+            </h4>
+            <div class="collapse" id="acc7" aria-expanded="true">
+              <div class="panel-content">
+                <p>
+                  There is an up and down in space. "Down" is simply the
+                  direction gravity is pulling you, and "up" is just the
+                  opposite direction. Since there is gravity everywhere in
+                  space, there is also an up and down everywhere in space.
+                  Gravity is a centrally attractive force, so "going down" means
+                  falling or being pulled towards the center of the nearest
+                  massive object. If you are in space and the earth is the
+                  nearest astronomical object, you fall towards earth. Down is
+                  therefore towards the earth's center and up is away from the
+                  earth's center when close to the earth. Down is not towards
+                  the earth's South Pole and up is not towards the earth's North
+                  Pole. This mistaken notion comes from the way we traditionally
+                  hold flat maps. The Nile river would never flow north if north
+                  were really up. Unfortunately, in an effort to explain why
+                  north is not up and south is not down, many people conclude
+                  there is no up or down in space, which is clearly wrong. If
+                  earth is the closest large body, down is always towards the
+                  center of the earth and up is always away from the center of
+                  the earth. Nothing magical happens if you are leave earth's
+                  surface and board the International Space Station: down is
+                  still in the same direction.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <section id="content">
-    <div class="col-sm-6 container ">
-      <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2> <br> <br>
-      <div class="container-toggle" id="accordion1">
-        <div class="panel style1">
-          <h4 class="panel-title"> <a href="#acc1" data-toggle="collapse" data-parent="#accordion1" data-abc="true"
-              aria-expanded="true">What keeps space empty?</a> </h4>
-          <div class="collapse" id="acc1" aria-expanded="true" style="">
-            <div class="panel-content">
-              <p>Space is not empty. A point in outer space is filled with gas, dust, a wind of charged particles from
-                the stars, light from stars, cosmic rays, radiation left over from the Big Bang, gravity, electric and
-                magnetic fields, and neutrinos from nuclear reactions.</p>
+    <footer id="footer">
+      <div class="m-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="text-center col-lg-6 col-md-12">
+              <h4>Useful Links</h4>
+              <a class="btn p-1" href="index.html">Home</a>
+              <a class="btn p-1" href="media.html">Media</a>
+              <a class="btn p-1" href="trivia.html">Trivia</a>
+              <a class="btn p-1" href="about.html">About</a>
+              <a class="btn p-1" href="faq.html">FAQ</a>
+              <a class="btn p-1" href="contacts.html">Contact</a>
             </div>
-          </div>
-        </div>
-        <div class="panel style1">
-          <h4 class="panel-title"> <a class="collapsed" href="#acc2" data-toggle="collapse" data-parent="#accordion1"
-              data-abc="true" aria-expanded="false">What keeps the sun spinning?</a> </h4>
-          <div class="collapse" id="acc2" aria-expanded="false">
-            <div class="panel-content">
-              <p>Nothing keeps the sun spinning. The sun spins under its own inertia and does not need any help to keep
-                it going. Isaac Newton observed that objects in motion tend to stay in motion. This is called the Law of
-                Inertia. It means that if an object is already moving and nothing acts on it to stop it, the object will
-                just keep moving under its own inertia. For instance, a hockey puck sliding across the parking lot will
-                only stop if it hits a wall or if there is enough friction acting on it to slow it down to a stop.
-                Without an external force like friction or a wall getting in the way, the puck will slide forever under
-                its own inertia. The Law of Inertia is just a conceptual statement. The more general and more
-                mathematical version of the Law of Inertia is called the Law of Conservation of Momentum. It states that
-                the total momentum of an object stays constant if nothing acts on the object.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel style1">
-          <h4 class="panel-title"> <a class="collapsed" href="#acc3" data-toggle="collapse" data-parent="#accordion1"
-              data-abc="true" aria-expanded="false">What makes space so cold?</a> </h4>
-          <div class="collapse" id="acc3" aria-expanded="false">
-            <div class="panel-content">
-              <p>Space is not always cold. It depends if you are facing the sun or not. And even if you are in shadow,
-                space is not cold in the sense that it will cool you down quickly. The part of an astronaut facing the
-                sun becomes blazing hot while the side in shadow remains a moderate temperature due to the suits
-                internal machinery. Think of how you feel standing close to a campfire on a cold night, and you get some
-                of idea of the temperatures effects in space. The dark parts of the moon reach -410° F while the sunlit
-                parts reach 240° F, as measured by the Lunar Reconnaissance Orbiter. We don't experience these cold and
-                hot extremes on earth because the atmosphere mixes around and evens out the temperatures. Planets
-                without atmospheres, however, experience these extreme variations.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel style1">
-          <h4 class="panel-title"> <a href="#acc5" data-toggle="collapse" data-parent="#accordion1" data-abc="true"
-              aria-expanded="true">What makes the Great Wall of China the only man-made object visible from
-              space? </a> </h4>
-          <div class="collapse" id="acc5" aria-expanded="true">
-            <div class="panel-content">
-              <p>The Great Wall of China is not visible to the naked eye from space, even in low-earth orbit, according
-                to NASA. Even though the wall is very long, it is also very thin, making it essentially invisible. In
-                fact, no man-made objects are visible from space by the naked eye, according to astronauts. The earth is
-                a very big place and human-sized objects are miniscule by comparison. With the help of zoom lenses,
-                cameras in space can see much finer detail than human eyes. However, due to its thinness, the Great Wall
-                of China is not the easiest man-made object for a camera in space to spot. If you slowly zoom in using a
-                space camera, the Houston airport, for instance, is visible long before the Great Wall of China. Major
-                highways radiating out like spokes from large cities are typically the most visible structures from
-                space for a camera. This is because valleys are typically blasted through the hills to make way for the
-                straight highways.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel style1">
-          <h4 class="panel-title"> <a href="#acc6" data-toggle="collapse" data-parent="#accordion1" data-abc="true"
-              aria-expanded="true">Why are all the stars fixed in space?</a> </h4>
-          <div class="collapse" id="acc6" aria-expanded="true">
-            <div class="panel-content">
-              <p>The stars are not fixed, but are constantly moving. If you factor out the daily arcing motion of the
-                stars across the sky due to the earth's rotation, you end up with a pattern of stars that seems to never
-                change. The stars seem so fixed that ancient sky-gazers mentally connected the stars into figures
-                (constellations) that we can still make out today. But in reality, the stars are constantly moving. They
-                are just so far away that the naked eye cannot detect their movement. But sensitive instruments can
-                detect their movement. Consider driving down the highway in the mountains at 60 mph. The telephone poles
-                on the side of the road seem to whiz past you, but the distant mountains seem to hardly move at all. In
-                fact, they are both traveling at the same speed (60 mph) relative to you. The mountains just seem to
-                move slower than the telephone poles because of a perspective effect known as parallax. In general, the
-                more distant an object, the less it moves in your field of view for a certain, fixed actual speed. The
-                stars (even the closest ones) are vastly farther away than the mountains, so their motion in our field
-                of view is miniscule. But they are still moving.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel style1">
-          <h4 class="panel-title"> <a href="#acc7" data-toggle="collapse" data-parent="#accordion1" data-abc="true"
-              aria-expanded="true">Why does the moon get bigger when it's closer to the horizon?</a> </h4>
-          <div class="collapse" id="acc7" aria-expanded="true">
-            <div class="panel-content">
-              <p>The moon stays approximately the same size, whether measured by apparent size or actual size. Actual
-                size is the number you would measure if you went to the moon with a long ruler. It would take a
-                cataclysmic event such as collision with a planet to change the actual size of the moon. Apparent size
-                is the angular diameter that an object takes up in a camera's field of view and depends on both actual
-                size and distance. The apparent size would change if the moon moved significantly away from the earth.
-                But it doesn't. According to "The Moon Book" by Kim Long, the distance of the moon from the earth only
-                changes by about 10%. This means that the observed diameter of the moon only changes by 10% throughout
-                the month. This small variation of the moon's apparent size is easily verified with a camera. We only
-                think the moon looks bigger on the horizon because of a psychological trick. When the moon is low, we
-                can visually compare it to distant mountains and conclude that the moon is much bigger than a mountain.
-                But when the moon is high, there is nothing to compare it to, so our minds perceive it to be smaller.
-                The exact mechanism is still debated by psychologists, as set forth in the book "The Moon Illusion" by
-                Maurice Hershenson.</p>
-            </div>
-          </div>
-        </div>
-        <div class="panel style1">
-          <h4 class="panel-title"> <a href="#acc8" data-toggle="collapse" data-parent="#accordion1" data-abc="true"
-              aria-expanded="true">Why is there no up and down in space?</a> </h4>
-          <div class="collapse" id="acc8" aria-expanded="true">
-            <div class="panel-content">
-              <p>There is an up and down in space. "Down" is simply the direction gravity is pulling you, and "up" is
-                just the opposite direction. Since there is gravity everywhere in space, there is also an up and down
-                everywhere in space. Gravity is a centrally attractive force, so "going down" means falling or being
-                pulled towards the center of the nearest massive object. If you are in space and the earth is the
-                nearest astronomical object, you fall towards earth. Down is therefore towards the earth's center and up
-                is away from the earth's center when close to the earth. Down is not towards the earth's South Pole and
-                up is not towards the earth's North Pole. This mistaken notion comes from the way we traditionally hold
-                flat maps. The Nile river would never flow north if north were really up. Unfortunately, in an effort to
-                explain why north is not up and south is not down, many people conclude there is no up or down in space,
-                which is clearly wrong. If earth is the closest large body, down is always towards the center of the
-                earth and up is always away from the center of the earth. Nothing magical happens if you are leave
-                earth's surface and board the International Space Station: down is still in the same direction.</p>
+
+            <div class="text-center col-lg-6 col-md-12">
+              <h4>Social Networks</h4>
+              <p>
+                To learn more about space programs follow those social networks
+              </p>
+              <div>
+                <a
+                  href="https://www.facebook.com/NASA/"
+                  class="fa fa-facebook"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://twitter.com/NASA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                  class="fa fa-twitter"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ"
+                  class="fa fa-youtube"
+                  target="_blank"
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <footer id="footer">
-
-    <div class="m-5">
-      <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="text-center col-lg-6 col-md-12">
-            <h4>Useful Links</h4>
-            <a class="btn p-1" href="index.html">Home</a>
-            <a class="btn p-1" href="media.html">Media</a>
-            <a class="btn p-1" href="trivia.html">Trivia</a>
-            <a class="btn p-1" href="about.html">About</a>
-            <a class="btn p-1" href="faq.html">FAQ</a>
-            <a class="btn p-1" href="contacts.html">Contact</a>
-          </div>
-
-          <div class="text-center col-lg-6 col-md-12">
-            <h4>Social Networks</h4>
-            <p>To learn more about space programs follow those social networks</p>
-            <div>
-              <a href="https://www.facebook.com/NASA/" class="fa fa-facebook" target="_blank"></a>
-              <a href="https://twitter.com/NASA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                class="fa fa-twitter" target="_blank"></a>
-              <a href="https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ" class="fa fa-youtube"
-                target="_blank"></a>
-            </div>
-          </div>
-
+      <div class="bg-dark text-center text-light">
+        <div class="p-3">
+          © 2021 Copyright All Rights Reserved:
+          <a href="index.html">COSMONAUT</a>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="bg-dark text-center text-light">
-      <div class="p-3">
-        © 2021 Copyright All Rights Reserved:
-        <a href="index.html">COSMONAUT</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

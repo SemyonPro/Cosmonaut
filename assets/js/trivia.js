@@ -94,7 +94,7 @@ var trivia = {
     
     // creates all the trivia guess options in the html
     $.each(questionOptions, function(index, key){
-      $('#options').append($('<button class="option btn btn-info btn-lg">'+key+'</button>'));
+      $('#options').append($('<button class="option btn btn-lg mr-2">'+key+'</button>'));
     })
     
   },
